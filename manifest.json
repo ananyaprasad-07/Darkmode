@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Mode Everywhere",
+  "description": "Turn any website into dark mode",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
